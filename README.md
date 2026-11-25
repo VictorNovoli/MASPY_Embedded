@@ -10,6 +10,7 @@ Sumário
 ---
 
 1. Descrição do Projeto
+
 O projeto iniciou na disciplina de Sistemas Multiagentes (SMA) ministrada pela prof. Drª. Célia G. Ralha,
 com o grupo sendo formado pelos alunos Lucas Stadler Karau, Marcos Vinicius Santos Passos e Victor Novoli Mendonça.
 
