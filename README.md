@@ -9,7 +9,7 @@ Sumário
 
 ---
 
-1. Descrição do Projeto
+### Descrição do Projeto
 
 O projeto iniciou na disciplina de Sistemas Multiagentes (SMA) ministrada pela prof. Drª. Célia G. Ralha,
 com o grupo sendo formado pelos alunos Lucas Stadler Karau, Marcos Vinicius Santos Passos e Victor Novoli Mendonça.
@@ -20,24 +20,24 @@ e como aprendem com as informações que obtém.
 
 ---
 
-2. Tecnologias Utilizadas
+### Tecnologias Utilizadas
 MASPY (versão), Arduino (versão), Javino (versão)
 
 ---
 
-3. Guia de Instalação
+### Guia de Instalação
 
 ---
 
-4. Guia de Utilização
+### Guia de Utilização
 
 ---
 
-5. Trabalhos Relacionados
+### Trabalhos Relacionados
 
 ---
 
-6. Contatos
+### Contatos
 
 Lucas Stadler Karau:
 
