@@ -44,6 +44,7 @@ class Genneric_environment(Environment):
                            self.delete(antigo)          
                      break                    # apaga esse objeto
                      #self.create(Percept(nome, (valor,)))
+                return
             else:
                 self.print("No answer from the serial port yet")    
             #break # CORREÇÃO: sai do laço depois de ler a resposta (antes continuava tentando até 100 vezes)
@@ -79,7 +80,7 @@ class Basic_Agent(Agent):
     # DELIBERAÇÃO: o agente escolhe o plano pelo contexto (a crença que ele tem sobre o LED)
     # equivale em AgentSpeak a:  +!analyze_environment : ledStatus(off) <- led_on.
     @pl(gain, Goal("analyze_environment"), Belief("ledStatus", "off", "Env"))
-    def led_is_off(self, src): # *args: versões antigas do MASPY passam o valor do contexto ('off'/'on') como argumento extra
+    def led_is_off(self, src, *args): # *args: versões antigas do MASPY passam o valor do contexto ('off'/'on') como argumento extra
         self.print("Sucess reading the Environment")
         time.sleep(3)     
         self.print(f"Belief: {self.get(Belief('ledStatus', Any, 'Env'))}")
@@ -93,7 +94,7 @@ class Basic_Agent(Agent):
 
     # equivale em AgentSpeak a:  +!analyze_environment : ledStatus(on) <- led_off.
     @pl(gain, Goal("analyze_environment"), Belief("ledStatus", "on", "Env"))
-    def led_is_on(self, src): # *args: versões antigas do MASPY passam o valor do contexto ('off'/'on') como argumento extra
+    def led_is_on(self, src, *args): # *args: versões antigas do MASPY passam o valor do contexto ('off'/'on') como argumento extra
         self.print("Sucess reading the Environment")
         time.sleep(0.9)       
         self.print(f"Belief: {self.get(Belief('ledStatus', Any, 'Env'))}")
